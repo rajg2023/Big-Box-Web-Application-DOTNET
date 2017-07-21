@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>Big Box App</title>
+<style>
+body{
+background-color:lightgray; 
+}
+</style>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+		<ol>
+			<li><a class="active" href="Login.aspx">Log In</a></li>
+		    <li><a class="active" href="Login.aspx">Log Out</a></li>
+			<li><a class="active" href="home.html">Home</a></li>
+			<li><a class="active" href="application.html">BigBoxApp</a></li>
+			<li style="float: right"><a href="contact.html">Contact Me</a></li>
+		</ol>
+		<center>
+		<h1>
+			<b><u>Welcome to the Big Box Web Application</u></b>
+		</h1>
+		</center>
+	<div style="width: 1250px; padding-top: 10px; padding-right:1px; padding-left:2px;  background-color:white;">
+	<div style="background-color: orange;width: 300px; float:right">
+		<form name="Store" method="GET" action="Stores.aspx" >
+			<h1>You will see the list of stores here</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+	<div style="background-color: #ff00ff;width: 300px; float:right;">
+		<form name="Division" method="GET" action="Divisions.aspx">
+			<h1>You will see the list of divisions here</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+
+	<div style="background-color: #003333;width: 300px; float:right;">
+		<form name="StoreSale" method="GET" action="StoreSales.aspx">
+			<h1>You will see the list of Store Sales here</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+	<div style="background-color: #00ffff; width: 300px; float:right;">
+		<form name="User" method="GET" action="Users.aspx">
+			<h1>You will see the list of users here</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+	<div style="background-color: green;width: 300px; float:right;">
+		<form name="Registration" method="GET"
+			action="Registration.aspx">
+			<h1>You will be prompted to registration page</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+	<div style="background-color: purple;width: 300px; float:right;">
+		<form name="Contact" method="GET" action="contact.html">
+			<h1>You will be prompted to contact me page</h1>
+			<button type="submit">Click Here</button>
+		</form>
+	</div>
+	</div>
+	<footer>
+		<marquee>Copyright &copy; 2017 R@jiv Giri</marquee>
+	</footer>
+	
+</body>
+</html>

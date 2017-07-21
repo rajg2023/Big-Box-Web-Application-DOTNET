@@ -1,0 +1,81 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+body{
+background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+	<ol>
+		<li><a class="active" href="Login.aspx">Login Page</a></li>
+		<li style="float: right"><a href="contact.html">Contact Me</a></li>
+	</ol>
+	<form name="ContactServlet" method="GET" action="message.html">
+		<input type="hidden" name="action" value="add">
+		<center>
+			<h1>
+		     <b>Contact Me Page</b>
+			</h1>
+		</center>
+		<div style="width: 504px;height: 355px;border: 10px solid white;">
+		<h2 style="text-align:left;float:left; padding-left:2px;">Please contact me via email, phone or linkedIN for my website review.</h2>
+		    <h3 style="text-align:left;float:left; padding-left:2px;">Rajiv Giri<br>Cincinnati Ohio</h3>
+		    <ul style="text-align:left;float:left; padding-left:2px;">
+		    <li style="width: 439px; "><b>Email:-</b>rgiri9025@gmail.com</li>
+		    <li  style="width: 439px; "><b>Phone:-</b>(513) 834-3371</li>
+		    <li style="width: 456px; "><b>LinkedIN:-</b>https://us.linkedin.com/in/girirajiv</li>
+		    </ul>
+		    </div>
+		   <div style="float:right;width:450px; text-align:left; padding-left:80px; padding-right:50px; height:355px;">
+		   <h1>Contact Form</h1>
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="firstName" required></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lastName" required></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td>Phone#:</td>
+					<td><input type="number" name="phone" required></td>
+				</tr>
+				<tr>
+					<td>Comments:</td>
+					<td><textarea name="comments" rows=5 cols=30 wrap="soft" required></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit" value="submit">Submit</button> <input
+						type="reset" value="Reset">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+					<input action="action" onclick="history.go(-1);" type="button" value="Back"/>
+					</td>
+				</tr>
+			</table>
+			</div>
+	</form>
+	<footer>
+		<marquee>Copyright &copy; 2017 R@jiv Giri</marquee>
+	</footer>
+</body>
+</html>

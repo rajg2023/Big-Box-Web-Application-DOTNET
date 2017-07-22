@@ -52,6 +52,10 @@
             height: 214px;
         }
 
+        .auto-style13 {
+            text-align: right;
+        }
+
     </style>
     <div style="text-align:left; padding-top: 0px; padding-bottom:5px; padding-left:2px; text-align: right;background-color:lightgreen;" class="auto-style12">
     
@@ -86,7 +90,7 @@
             <tr>
                 <td class="auto-style3" colspan="3">
 
-<center>
+<center class="auto-style13">
         <asp:HyperLink ID="HyperLink1" align="center" runat="server" ForeColor="Blue" NavigateUrl="~/Registration.aspx" Height="16px" Width="180px">New Users Register Here.</asp:HyperLink>
     </center>
     </td>

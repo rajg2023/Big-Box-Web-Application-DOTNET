@@ -31,10 +31,8 @@ div {
          <input action="action" onclick="history.go(-1);" type="button" value="Back"/>
     </center>
     
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-            SelectCommand="SELECT * FROM [divisions]"
-            UpdateCommand="UPDATE [divisions] SET [DivisionNumber]=@DivisionNumber, [Name]=@Name, [Address]=@Address,[City]=@City, [State]=@State, [ZipCode]=@ZipCode WHERE [id]=@id "
-            DeleteCommand="DELETE FROM [divisions] WHERE [id]=@id"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RegistrationConnectionString %>" 
+            SelectCommand="SELECT * FROM [divisions]"></asp:SqlDataSource>
             
             
             

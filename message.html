@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Message</title>
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+body{
+background-color: lightgray; 
+}
+</style>
+</head>
+<body>
+	<ol>
+		<li><a class="active" href="index.html">Log In</a></li>
+		<li><a class="active" href="index.html">Log Out</a></li>
+		<li><a class="active" href="home.html">Home</a></li>
+		<li><a class="active" href="application.html">BigBoxApp</a></li>
+		<li style="float: right"><a href="contact.html">Contact Me</a></li>
+	</ol>
+
+<h1>Thank you for contacting me.</h1>
+    <div id="yourdata" style="align-content:center; width:1250px"></div>
+
+    <script>
+// get the div to display results
+var yourdataDIV = document.getElementById("yourdata");
+
+// get the URL for the current page
+var url = window.location.href;
+
+// pull off the query string (everything after the "?")
+var urlparts = url.split("?");
+if (urlparts.length == 0)
+{
+  yourdataDIV.innerHTML = "No query string found";
+}
+else
+{
+  // pull apart the name/value pairs
+  dataparts = urlparts[1].split("&")
+
+  // display them
+  for (var i=0; i<dataparts.length; i++)
+  {
+    yourdataDIV.innerHTML += dataparts[i] + "<br>";
+  }
+}
+    </script>
+
+</body>
+</html>

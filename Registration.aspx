@@ -1,9 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration" MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration"%>
 
 
+<!DOCTYPE html>
 
- <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-         <style>
+<html>
+<head runat="server">
+  <title>Rajiv's Portfolio</title>
+    <link href="css/main.css" rel="stylesheet" />
+ <%--   <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="js/bootstrap.js"></script>--%>
+ <style>
         
         .aspNetHidden
         {
@@ -65,7 +77,15 @@ div {
              .auto-style16 {
                  width: 189px;
              }
+
           </style>
+    </head>
+<body>
+    <ol>
+		<li><a class="active" href="Login.aspx">Log In</a></li>
+		<li style="float: right"><a href="ContactUs.aspx">Contact Me</a></li>
+	</ol>
+    <form id="form1" runat="server" width="100%">
      <div class="auto-style8" style="align-content:center; width:1250px;" >
         <table class="auto-style4">
             <tr>
@@ -395,17 +415,7 @@ div {
             </tr>
         </table>
   </div>
-    </asp:Content>
-<%--<asp:Content ID="Content3" runat="server" contentplaceholderid="head">
-    <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-        }
-        .auto-style2 {
-            text-align: right;
-        }
-        .auto-style3 {
-            text-align: left;
-        }
-    </style>
-</asp:Content>--%>
+  </form>
+    <footer style="text-align:center"> Copyright &copy; 2017 R@jiv Giri </footer>
+    </body>
+    </html>

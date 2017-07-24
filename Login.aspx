@@ -1,7 +1,24 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+<!DOCTYPE html>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <style>
+<html>
+<head runat="server">
+  <title>Rajiv's Portfolio</title>
+    <link href="css/main.css" rel="stylesheet" />
+ <%--   <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="js/bootstrap.js"></script>--%>
+    <style type="text/css">
+    body{
+
+        
+    }
+    
         
         .aspNetHidden
         {
@@ -41,6 +58,7 @@
         }
         .auto-style10 {
             height: 30px;
+            text-align: left;
         }
         .auto-style11 {
             width: 238px;
@@ -52,11 +70,15 @@
             height: 214px;
         }
 
-        .auto-style13 {
-            text-align: right;
-        }
-
     </style>
+</head>
+<body>
+    <ol>
+		<li><a class="active" href="Login.aspx">Log In</a></li>
+		<li style="float: right"><a href="ContactUs.aspx">Contact Me</a></li>
+	</ol>
+    <form id="form1" runat="server" width="100%">
+
     <div style="text-align:left; padding-top: 0px; padding-bottom:5px; padding-left:2px; text-align: right;background-color:lightgreen;" class="auto-style12">
     
         <h1 class="auto-style2" style="text-align:left">Login Here</h1>
@@ -90,8 +112,8 @@
             <tr>
                 <td class="auto-style3" colspan="3">
 
-<center class="auto-style13">
-        <asp:HyperLink ID="HyperLink1" align="center" runat="server" ForeColor="Blue" NavigateUrl="~/Registration.aspx" Height="16px" Width="180px">New Users Register Here.</asp:HyperLink>
+<center>
+        <asp:HyperLink ID="HyperLink1" align="center" runat="server" ForeColor="Blue" NavigateUrl="~/Registration.aspx" Height="16px" Width="172px">New Users Register Here.</asp:HyperLink>
     </center>
     </td>
             </tr>
@@ -108,16 +130,16 @@
 
 
         </div>
-    <h1>Welcome to My WebPage</h1>
+    <h1 style="text-align:center">Welcome to My .NET WebPage</h1>
 	<p style="padding-top: 2px; padding-left: 12px; text-align: left; font-family:Verdana;">
 	     This is the final project of my Java Bootcamp Spring 2017 web
-			version of BIG BOX application. This is a Java Dynamic Web
-			application and consist of servlets, jsp and html pages which creates
+			version of BIG BOX application converted into .NET Project. This is a Web
+			Application and consist of .aspx, .aspx.cs and html pages which creates
 			home page, my resume page, BigBox application page where user can
 			view list of stores, divisions, users, registration and login page.
 			It has User, Division, Store and Store Sales classes stored into
-			their respective packages.It implements the DAO Factory Pattern and
-			stores and gets the data from PLSql (PGAdmin) Database, converted
+			their respective packages.It 
+			stores and gets the data from SQL Database, converted
 			from MYSQL database to deploy on Heroku. Since this project is a
 			Dynamic web application User can access it online via URL and can
 			register and login with the currently registered user name and
@@ -181,9 +203,9 @@
 			Technician at Kroger2009 - 2012 (3 years)</p>
 	</div>
 
-	<footer> Copyright &copy; 2017 R@jiv Giri </footer>
-
-
-
-
-   </asp:Content>
+	 
+   
+ </form>
+    <footer style="text-align:center"> Copyright &copy; 2017 R@jiv Giri </footer>
+</body>
+</html>

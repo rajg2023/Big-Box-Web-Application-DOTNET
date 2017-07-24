@@ -31,7 +31,7 @@
 		<li><a class="active" href="Login.aspx">Log Out</a></li>
 		<li><a class="active" href="Home.html">Home</a></li>
 		<li><a class="active" href="application.html">BigBoxApp</a></li>
-		<li style="float: right"><a href="contact.html">Contact Me</a></li>
+		<li style="float: right"><a href="ContactUs.aspx">Contact Me</a></li>
 	</ol>
     <form id="form1" runat="server" width="100%">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -39,5 +39,6 @@
         </asp:ContentPlaceHolder>
    
     </form>
+   <div id="footerContent" style="width:960px;margin:0;padding:4px;clear:both;margin-top:5px;font-size:16px;text-align:center;">Copyright &copy; 2017 R@jiv Giri </div>
 </body>
 </html>

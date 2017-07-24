@@ -17,7 +17,8 @@ public partial class Login : System.Web.UI.Page
 
     protected void Button_Login_Click(object sender, EventArgs e)
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
         conn.Open();
         string checkuser = "select count(*) from Registration where UserName  = '" + TextBoxUN.Text + "'";
         SqlCommand com = new SqlCommand(checkuser, conn);

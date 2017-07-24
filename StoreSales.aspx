@@ -31,10 +31,8 @@ div {
           </style>
     <center>
     <h1 class="auto-style2">Store Sales Page</h1>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-            SelectCommand="SELECT * FROM [store_sales]"
-            UpdateCommand="UPDATE [store_sales] SET [StoreID]=@StoreID, [Year]=@Year, [Week]=@Week,[Sales]=@Sales WHERE [id]=@id "
-            DeleteCommand="DELETE FROM [store_sales] WHERE [id]=@id"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RegistrationConnectionString %>" 
+            SelectCommand="SELECT * FROM [store_sales]"></asp:SqlDataSource>
             <input action="action" onclick="history.go(-1);" type="button" value="Back"/> 
             
 </center>

@@ -20,8 +20,8 @@ public partial class ContactUs : System.Web.UI.Page
             if (Page.IsValid)
             {
                 MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress("rgiri9025@gmail.com");
-                mailMessage.To.Add("rgiri9025@gmail.com");
+                mailMessage.From = new MailAddress("your email here");
+                mailMessage.To.Add("your email here");
                 mailMessage.Subject = txtSubject.Text;
 
                 mailMessage.Body = "<b>Sender Name : </b>" + txtName.Text + "<br/>"
@@ -33,7 +33,7 @@ public partial class ContactUs : System.Web.UI.Page
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
                 smtpClient.EnableSsl = true;
                 smtpClient.Credentials = new
-                    System.Net.NetworkCredential("rgiri9025@gmail.com", "Femidom123@");
+                    System.Net.NetworkCredential("your email here", "your password here");
                 smtpClient.Send(mailMessage);
 
                 lblMessage.ForeColor = System.Drawing.Color.Blue;

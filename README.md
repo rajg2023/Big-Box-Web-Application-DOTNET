@@ -1,2 +1,4 @@
-# Big-Box-Web-Application---C-
+# Big-Box-Web-Application---CSharp-
 This is C# Version of Big Box Application.
+
+This is the final project of my Java Bootcamp Spring 2017 web version of BIG BOX application converted into .NET Project. This is a Web Application and consist of .aspx, .aspx.cs and html pages which creates home page, my resume page, BigBox application page where user can view list of stores, divisions, users, registration and login page. It stores and gets the data from SQL Database from SQL Server database to deploy on Azure. Since this project is a Web application user can access it online via URL and can register and login with the currently registered user name and password. You can see the home page with Welcome message, my resume page and can access BigBox application from menu and see the list of stores, divisions, users and many other features. This project is build with Visual C# and deployed in Azure.
